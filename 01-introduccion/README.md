@@ -1,19 +1,24 @@
 
-# 01. Introducción a Git
+# 1. Introducción a Git
 
 
 <details>
   <summary><strong>🧠 ¿Qué es un Control de Versiones?</strong></summary>
 
-Un **control de versiones** es un sistema que registra cada cambio realizado en los archivos de un proyecto.  
-Permite:
+<p align="justify">
+  <img align="right" src="https://dinahosting.com/blog/upload/2018/06/Control-de-versiones.jpg" width="220" style="margin-left: 15px; border-radius: 10px;" />
 
-- 📜 Llevar un historial completo de cambios.  
-- 🧍 Saber *quién* hizo el cambio y *cuándo*.  
-- 🔐 Mantener la seguridad y consistencia del código.  
-- 🔄 Ofrece flexibilidad: no obliga a un desarrollo lineal.
+  Un <strong>control de versiones</strong> es un sistema que registra cada cambio realizado en los archivos de un proyecto. Permite:
+</p>
+
+- 📜 <strong>Llevar un historial completo de cambios.</strong>  
+- 🧍 <strong>Saber</strong> *quién* hizo el cambio y *cuándo*.  
+- 🔐 <strong>Mantener la seguridad y consistencia del código.</strong>  
+- 🔄 <strong>Ofrece flexibilidad: no obliga a un desarrollo lineal.</strong>
+
 
 </details>
+
 
 <details>
   <summary><strong>📜 Breve Historia</strong></summary>
@@ -31,20 +36,23 @@ Permite:
 <details>
   <summary><strong>🧰 ¿Qué es Git?</strong></summary>
 
-**Git** es un sistema de control de versiones distribuido que permite trabajar con repositorios locales y remotos de forma eficiente y segura.
+<p align="justify">
+  <img align="right" src="https://leninmhs.com/wp-content/uploads/2023/11/git-historia.svg" width="100" style="margin-left: 15px; border-radius: 10px;" />
+
+  <strong>Git</strong> es un sistema de control de versiones distribuido que permite trabajar con repositorios locales y remotos de forma eficiente y segura.
+</p>
+
 
 </details>
+
 
 <details>
   <summary><strong>📁 ¿Qué es un Repositorio?</strong></summary>
 
 Un **repositorio** es una carpeta que contiene:
-
 - Las distintas versiones de los archivos.
 - El historial completo de cambios.
-
 Puede ser:
-
 - 📍 **Local**: en tu máquina.  
 - 🌐 **Remoto**: en un servidor (GitHub, GitLab, etc.).
 
@@ -57,36 +65,25 @@ Puede ser:
 
 Pasos clave durante la instalación:
 
-1. Selecciona la carpeta de destino.
-    ![](../Imagenes/Instalacion/paso1.png)
-2. Selecciona todos los componentes.  
-    ![](../Imagenes/Instalacion/paso2.png)
-3. Agrega un acceso directo.  
-    ![](../Imagenes/Instalacion/paso3.png)
-4. Selecciona tu editor de texto.  
-    ![](../Imagenes/Instalacion/paso4.png)
-5. Rama principal: escribe `"main"`  
-    ![](../Imagenes/Instalacion/paso5.png)
-6. Opción recomendada  
-    ![](../Imagenes/Instalacion/paso6.png)
-7. Deja la opción SSH  
-    ![](../Imagenes/Instalacion/paso7.png)
-8. Usa OpenSSL  
-    ![](../Imagenes/Instalacion/paso8.png)
-9. Elige la primera opción (Unix: segunda)  
-    ![](../Imagenes/Instalacion/paso9.png)
-10. Interfaz por defecto  
-    ![](../Imagenes/Instalacion/paso10.png)
-11. Fast-Forward o merge  
-    ![](../Imagenes/Instalacion/paso11.png)
-12. Deja por defecto  
-    ![](../Imagenes/Instalacion/paso12.png)
-13. Activa caché de optimización  
-    ![](../Imagenes/Instalacion/paso13.png)
-14. Clic en instalar  
-    ![](../Imagenes/Instalacion/paso14.png)
+| Paso | Descripción | Imagen |
+|------|-------------|--------|
+| 1 | Selecciona la carpeta de destino | <img src="../Imagenes/Instalacion/paso1.png" width="200"/> |
+| 2 | Selecciona todos los componentes | <img src="../Imagenes/Instalacion/paso2.png" width="200"/> |
+| 3 | Agrega un acceso directo | <img src="../Imagenes/Instalacion/paso3.png" width="200"/> |
+| 4 | Selecciona tu editor de texto | <img src="../Imagenes/Instalacion/paso4.png" width="200"/> |
+| 5 | Rama principal: escribe `"main"` | <img src="../Imagenes/Instalacion/paso5.png" width="200"/> |
+| 6 | Opción recomendada | <img src="../Imagenes/Instalacion/paso6.png" width="200"/> |
+| 7 | Deja la opción SSH | <img src="../Imagenes/Instalacion/paso7.png" width="200"/> |
+| 8 | Usa OpenSSL | <img src="../Imagenes/Instalacion/paso8.png" width="200"/> |
+| 9 | Elige la primera opción (Unix: segunda) | <img src="../Imagenes/Instalacion/paso9.png" width="200"/> |
+| 10 | Interfaz por defecto | <img src="../Imagenes/Instalacion/paso10.png" width="200"/> |
+| 11 | Fast-Forward o merge | <img src="../Imagenes/Instalacion/paso11.png" width="200"/> |
+| 12 | Deja por defecto | <img src="../Imagenes/Instalacion/paso12.png" width="200"/> |
+| 13 | Activa caché de optimización | <img src="../Imagenes/Instalacion/paso13.png" width="200"/> |
+| 14 | Clic en instalar | <img src="../Imagenes/Instalacion/paso14.png" width="200"/> |
 
 </details>
+
 
 <details>
   <summary><strong>📘 Primeros comandos en Git</strong></summary>
@@ -105,4 +102,26 @@ Pasos clave durante la instalación:
 | 8  | `:wq`                                                 | Comando para guardar y salir (Vim/Nano)                |
 
 </details>
+
+<details>
+  <summary><strong>📝 Notas y Recomendaciones</strong></summary>
+
+<br/>
+
+🔹 **Git vs GitHub**  
+Git es el sistema de control de versiones que funciona en tu máquina local.  
+GitHub es una plataforma en línea para almacenar repositorios Git y colaborar en equipo. ¡No son lo mismo!
+
+---
+
+🔹 **Buenas prácticas al usar Git:**
+
+- 🔁 Realiza commits frecuentes y pequeños.  
+- 🧠 Usa mensajes claros que expliquen qué hiciste.  
+- 🚫 No subas archivos innecesarios (usa `.gitignore`).  
+- 🛠️ Usa ramas para probar nuevas ideas sin afectar el código principal.  
+- 📦 Documenta tu proyecto en el `README.md`.  
+
+</details>
+
 
