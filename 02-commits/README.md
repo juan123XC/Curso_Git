@@ -62,6 +62,7 @@ Antes de guardar tus cambios, debes agregarlos al área de *staging*:
 git add README.md
 ```
 Esto mueve el archivo al área de preparación.
+
  ***Nota 📝***
  Tambien se puede usar 
  ```bash
@@ -70,4 +71,27 @@ git add .
 Sirve para añadir todo los archivos del *stating*:
 
 </div> <img src="https://www.w3docs.com/uploads/media/default/0001/03/ad19114d2f18ae7f7e8b99a5110d1a2f339282c6.png" alt="git init" width="500" style="align-self: center; border-radius: 100px;" /> </div> </details> 
+</details>
+
+<details>
+  <summary><strong> 📸 Paso 4: Crear un Commit </strong></summary>
+  <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+
+<div style="flex: 2; padding-right: 20px;">
+
+
+Un *commit* guarda el estado actual de tus archivos. Incluye:
+
+- Qué archivos cambiaron  
+- Quién hizo el cambio  
+- Cuándo se hizo  
+- Un mensaje explicativo
+
+```bash
+git commit -m "Agrega archivo README con descripción inicial"
+```
+> 🧠 Piensa en el *commit* como una fotografía del proyecto: puedes volver a este punto si algo falla.
+
+---
+</div> <img src="../Imagenes/Fotocommit.png" alt="git init" width="500" style="align-self: center; border-radius: 100px;" /> </div> </details> 
 </details>
