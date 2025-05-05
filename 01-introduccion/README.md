@@ -59,7 +59,7 @@ Puede ser:
 </details>
 
 <details>
-  <summary><strong>🚀 Instalación de Git (Haz clic para ver)</strong></summary>
+  <summary><strong>🚀 Instalación de Git</strong></summary>
 
 👉 Descarga Git desde: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
