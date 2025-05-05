@@ -62,7 +62,6 @@ Antes de guardar tus cambios, debes agregarlos al área de *staging*:
 git add README.md
 ```
 Esto mueve el archivo al área de preparación.
-
  ***Nota 📝***
  Tambien se puede usar 
  ```bash
@@ -94,4 +93,62 @@ git commit -m "Agrega archivo README con descripción inicial"
 
 ---
 </div> <img src="../Imagenes/Fotocommit.png" alt="git init" width="500" style="align-self: center; border-radius: 100px;" /> </div> </details> 
+</details>
+<details>
+  <summary><strong> 🧭 ¿Qué es el HEAD? </strong></summary>
+
+- `HEAD` es un puntero especial que indica tu posición actual en el historial de *commits*.  
+- Siempre apunta al último commit activo.  
+- Es como el “usted está aquí” en un mapa de versiones.
+
+</details>
+
+<details>
+  <summary><strong>🧵 Uso de Wildcards y Directorios </strong></summary>
+
+### 📂 Agregar archivos específicos por tipo
+
+- Los **wildcards** (comodines) permiten seleccionar varios archivos según su extensión o ubicación.
+
+```bash
+git add *.html         # Agrega todos los archivos .html en el directorio actual
+git add js/*.js        # Agrega todos los archivos .js dentro de la carpeta /js
+git add namefile/      # Agrega todos los archivos dentro del directorio "namefile"
+```
+## En caso de guardar directorios vacios 📂
+- Git no guarda carpetas vacías por defecto. Para solucionarlo, se usa un archivo especial llamado `.gitkeep`.
+
+```bash
+# Crear archivo oculto dentro del directorio vacío
+touch namefile/.gitkeep
+```
+## Git Diff 
+- El comando git diff muestra las diferencias entre los archivos modificados y su versión anterior.
+```bash
+git diff
+```
+</details>
+<details>
+  <summary><strong>🧩 Creando tus alias en Git </strong></summary>
+
+- Los alias en Git te permiten acortar comandos largos con abreviaciones que tú defines.
+
+- Por ejemplo, para ver el estado de tus archivos en formato resumido:
+
+```bash
+git status --short
+```
+- Puedes crear un alias llamado s así:
+
+```bash
+git config --global alias.s status --short
+```
+
+- Ahora, en lugar de escribir todo el comando largo, solo usarás:
+
+```bash
+git s
+```
+- ***⚠️ Nota: La única restricción es que el alias no puede tener el mismo nombre que un comando oficial de Git.***
+
 </details>
