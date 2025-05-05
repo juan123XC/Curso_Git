@@ -51,3 +51,23 @@ Los archivos pueden estar en uno de tres estados:
 
 </div> <img src="https://nulab.com/static/d13cdc1344230f603d17b31a5cbd1dae/5a190/02.png" alt="git init" width="500" style="align-self: center; border-radius: 100px;" /> </div> </details> 
 </details>
+<details>
+  <summary><strong> 📥 Paso 3: Agregar Archivos al Área de Stage </strong></summary>
+  <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+
+<div style="flex: 2; padding-right: 20px;">
+
+Antes de guardar tus cambios, debes agregarlos al área de *staging*:
+```bash
+git add README.md
+```
+Esto mueve el archivo al área de preparación.
+ ***Nota 📝***
+ Tambien se puede usar 
+ ```bash
+git add .
+```
+Sirve para añadir todo los archivos del *stating*:
+
+</div> <img src="https://www.w3docs.com/uploads/media/default/0001/03/ad19114d2f18ae7f7e8b99a5110d1a2f339282c6.png" alt="git init" width="500" style="align-self: center; border-radius: 100px;" /> </div> </details> 
+</details>
