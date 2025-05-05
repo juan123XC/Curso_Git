@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="35" style="margin-right: 20px;">
-  <span style="font-size: 26px; font-weight: bold;">📘 Curso Git y GitHub</span>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PZrXyyGU8COSAjuis_MjtSyQd2BbHZZQLQ&s" alt="SCESI Logo" width="45" style="margin-left: 20px;">
-</p>
+<h1 align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="40" style="margin-right: 20px;">
+  📘 CURSO GIT Y GITHUB
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PZrXyyGU8COSAjuis_MjtSyQd2BbHZZQLQ&s" width="45" style="margin-left: 20px;">
+</h1>
 
 #### Esta es una recopilación del curso que nos brindó el Profesor Winsor, integrante de SCESI UMSS.
 
