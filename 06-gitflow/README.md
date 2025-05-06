@@ -44,3 +44,53 @@ Organiza el desarrollo en ramas con propósitos específicos, facilitando la ges
 
 Este flujo requiere confianza, responsabilidad y automatización de pruebas.
 </details>
+
+<details>
+  <summary><strong>✅ Ventajas de GitFlow</strong></summary>
+
+- 🧩 Organización clara por tipo de rama.  
+- 🔄 Permite múltiples versiones en paralelo.  
+- 👥 Ideal para equipos grandes y colaborativos.  
+- ⏳ Control preciso sobre pruebas y lanzamientos.
+</details>
+
+<details>
+  <summary><strong>⚠️ Cuándo evitar GitFlow</strong></summary>
+
+- 🚫 No es ideal para proyectos pequeños o personales.  
+- 🐌 Sin CI/CD, puede ser lento y engorroso.  
+- 📉 No favorece la entrega continua rápida.
+</details>
+
+<details>
+  <summary><strong>💡 Consejos prácticos para GitFlow</strong></summary>
+
+- 🧪 Automatiza pruebas en `develop` y `release` con GitHub Actions o Jenkins.  
+- 📛 Nombra tus ramas claramente:  
+  - `feature/login-auth`  
+  - `release/v1.2`  
+  - `hotfix/payment-bug`  
+- 🧼 Elimina ramas después de fusionarlas.  
+- 🔍 Usa Pull Requests para control de calidad.  
+- 📅 No mezcles tareas no relacionadas en una misma release.
+</details>
+
+<details>
+  <summary><strong>📊 Comparativa de Flujos</strong></summary>
+
+| Flujo                | Ramas principales      | Ideal para...                        | Complejidad |
+|----------------------|------------------------|--------------------------------------|-------------|
+| **GitFlow**          | `main`, `develop`, etc.| Equipos grandes, apps complejas      | Alta        |
+| **GitHub Flow**      | `main` + temporales    | Proyectos simples, despliegue rápido | Media       |
+| **Trunk-Based Dev**  | `main` + efímeras      | CI/CD continuo, cambios mínimos      | Baja        |
+| **Ship/Show/Ask**    | `main` + efímeras      | Equipos responsables y maduros       | Media       |
+</details>
+
+<details>
+  <summary><strong>📌 Extras </strong></summary>
+
+- Añade un diagrama visual del flujo GitFlow.  
+- Muestra ejemplos reales de su implementación.  
+- Finaliza con esta pregunta:  
+  **¿Qué flujo se adapta mejor a tu equipo o proyecto actual?**
+</details>
