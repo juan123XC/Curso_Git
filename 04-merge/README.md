@@ -1,7 +1,7 @@
 # 4 GitHub
 
 <details>
-  <summary><strong>📘 ¿Git y GitHub son lo mismo?</strong></summary>
+  <summary><strong> ¿Git y GitHub son lo mismo?</strong></summary>
   
   - **Git** es un sistema de control de versiones local.
   - **GitHub** es una plataforma en la nube para alojar repositorios Git y facilitar la colaboración.
@@ -10,7 +10,7 @@
 </details>
 
 <details>
-  <summary><strong>📌 ¿GitHub es único?</strong></summary>
+  <summary><strong> ¿GitHub es único?</strong></summary>
 
   No. Existen otras plataformas:
   - **Bitbucket**: Repositorios privados, integración con Jira (de Atlassian).
@@ -18,7 +18,7 @@
 </details>
 
 <details>
-  <summary><strong>📎 Repositorios remotos</strong></summary>
+  <summary><strong> Repositorios remotos</strong></summary>
 
   - Son repositorios alojados en un servidor (como GitHub).
   - Permiten sincronizar código entre distintos desarrolladores y dispositivos.
@@ -27,7 +27,7 @@
 </details>
 
 <details>
-  <summary><strong>📘 Navegando por GitHub</strong></summary>
+  <summary><strong> Navegando por GitHub</strong></summary>
 
   Funcionalidades principales de un repositorio:
   - `Code`: Ver archivos del proyecto.
@@ -63,5 +63,43 @@
   clip < ~/.ssh/id_rsa.pub
   ```
   🔗 Pegar en: [https://github.com/settings/ssh/new](https://github.com/settings/ssh/new)
+</details>
+
+
+<details>
+  <summary><strong>📌 Conexión con repositorio remoto</strong></summary>
+
+  ```bash
+  # Agregar remoto
+  git remote add origin <url>
+
+  # Ver remotos
+  git remote -v
+
+  # Subir cambios
+  git push origin <rama>
+
+  # Obtener cambios
+  git fetch
+
+  # Eliminar ramas remotas obsoletas
+  git remote prune origin
+  ```
+</details>
+
+<details>
+  <summary><strong>📌 Manejo de ramas</strong></summary>
+
+  ```bash
+  # Ver ramas locales y remotas
+  git branch -a
+
+  # Cambiar a una rama remota
+  git switch <rama_remota>
+
+  # Clonar un repositorio
+  git clone <url>
+  ```
+  💡 Usa `origin` como nombre por defecto para el repositorio remoto principal.
 </details>
 
