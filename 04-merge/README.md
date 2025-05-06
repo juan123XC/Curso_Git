@@ -22,6 +22,46 @@
 
   - Son repositorios alojados en un servidor (como GitHub).
   - Permiten sincronizar código entre distintos desarrolladores y dispositivos.
-  
+
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7CpqGNI2ceZA6Kc5VJL6l2OopC2GE-4xCdduHCyo8ZhwUhxREhEfFkH0IthUE5HqVASxGXl2SET_CrKEMmmagqSxEeSfxxV9Hq_7wf41vHuXZhAOAeO59K0lvXY7MWSlV7VwLKINVf4k/s640/Repositorios.PNG" width="400"/>
 </details>
+
+<details>
+  <summary><strong>📘 Navegando por GitHub</strong></summary>
+
+  Funcionalidades principales de un repositorio:
+  - `Code`: Ver archivos del proyecto.
+  - `Pull Requests`: Revisar y aceptar cambios.
+  - `Actions`: Automatizar flujos de trabajo.
+  - `Projects`: Organización de tareas.
+  - `Wiki`: Documentación.
+  - `Security`: Alertas de seguridad.
+  - `Insights`: Estadísticas.
+  - `Settings`: Configuración general.
+
+    <img src="https://kinsta.com/wp-content/uploads/2023/02/save-repo-settings-1024x492.png" width="400"/>
+</details>
+
+
+<details>
+  <summary><strong>📌 Generar y configurar clave SSH</strong></summary>
+
+  ```bash
+  # Ver llaves existentes
+  ls -al ~/.ssh
+
+  # Crear nueva clave SSH
+  ssh-keygen -t rsa -b 4096 -C "tu.email@gmail.com"
+
+  # Activar el agente SSH
+  eval "$(ssh-agent -s)"
+
+  # Añadir la clave
+  ssh-add ~/.ssh/id_rsa
+
+  # Copiar la clave pública (Windows)
+  clip < ~/.ssh/id_rsa.pub
+  ```
+  🔗 Pegar en: [https://github.com/settings/ssh/new](https://github.com/settings/ssh/new)
+</details>
+
