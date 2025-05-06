@@ -104,6 +104,37 @@ Eliminar ramas es una buena práctica que forma parte del flujo profesional de t
 
 </details>
 
+## Tipos de Uniones en Git
+
+<details>
+  <summary><strong>Fast-Forward (Avance Rápido)</strong></summary>
+📌 Ocurre cuando la rama a fusionar está directamente adelante de la rama en la que estás. En este caso, Git avanza la referencia de la rama principal hacia el último commit de la rama de características.
+
+  **Comando**:
+  ```bash
+  git merge <nombre-rama>
+  ```
+  
+  <img src="../Imagenes/Fast.png" alt="Fast Forward" width="300"/>
+
+</details> <details> <summary><strong>Unión Automática</strong></summary> 📌 Cuando no hay conflictos, Git fusionará las ramas automáticamente y no necesitarás hacer nada más.
+
+  <img src="../Imagenes/Union.png" alt="Fast Forward" width="300"/>
+</details> <details> <summary><strong>Unión Manual (Merge Commit)</strong></summary> 📌 Si existen conflictos entre las ramas, Git te pedirá que los resuelvas manualmente. Una vez que se resuelvan los conflictos, debes hacer un commit para completar la fusión.
+
+Comando:
+ ```bash
+git merge <nombre-rama>
+  ```
+
+  <img src="../Imagenes/MergeManual.png" alt="Fast Forward" width="300"/>
+</details>
+
+## ¿Qué pasa cuando dos personas tocan el mismo código?
+<details> <summary><strong>Conflictos de Merge</strong></summary> 📌 Si dos personas modifican la misma línea de código en diferentes ramas y luego intentan hacer un merge, Git detectará un conflicto. En ese caso, necesitarás resolverlo manualmente. Esto puede ocurrir cuando modificas líneas del mismo archivo en diferentes ramas y luego intentas fusionarlas. </details>
+
+## Resolución de Conflictos
+<details> <summary><strong>Resolución Manual</strong></summary> 📌Git te marcará el archivo con conflictos y podrás resolverlo editando el archivo directamente. </details> <details> <summary><strong>Herramientas de IDE</strong></summary> 📌 Muchos editores como VS Code, IntelliJ o GitHub Desktop tienen herramientas para ayudarte a resolver conflictos de manera visual. </details> <details> <summary><strong>Finalizar el Merge</strong></summary> 📌 Una vez resuelto el conflicto, debes hacer un `git commit` para completar el merge. </details> 
 
 ## 📋 Tabla de comandos de Git relacionados con commits
 
