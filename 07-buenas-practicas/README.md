@@ -9,3 +9,11 @@
 
     <img src="https://aelis.es/wp-content/uploads/2023/10/buenas-practicas-1.jpeg" width="400"/>
 </details>
+<details>
+  <summary><strong>🕒 ¿Cada cuánto debería hacer un commit?</strong></summary>
+
+- **Haz commits frecuentemente.**
+- Es mejor **varios commits pequeños** que uno muy grande.
+- Agrupa cambios lógicos relacionados (no mezcles múltiples funcionalidades en un solo commit).
+- Frecuencia no significa desorden: **evita commits innecesarios** o sin sentido.
+</details>
