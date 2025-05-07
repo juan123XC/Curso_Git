@@ -20,3 +20,21 @@ Git nos ofrece herramientas tanto destructivas como no destructivas para estos c
 - `git reset` → destructivo
 - `git revert`, `git checkout` → no destructivos
 </details>
+
+<details>
+  <summary><strong>🔧 git reset</strong></summary>
+
+Permite mover el puntero de HEAD y modificar el historial local.
+
+- `--soft`: mantiene los cambios realizados en staging (index).
+- `--hard`: **descarta completamente** los cambios, tanto del staging como del working directory.
+
+```bash
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+git reset --soft <SHA>
+git reset --hard <SHA>
+⚠️ --hard borra cambios irreversiblemente si no están respaldados.
+```
+
+</details> 
