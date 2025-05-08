@@ -36,5 +36,5 @@ git reset --soft <SHA>
 git reset --hard <SHA>
 ⚠️ --hard borra cambios irreversiblemente si no están respaldados.
 ```
-
+   <img src="https://miro.medium.com/v2/resize:fit:1400/1*lirDsZh5ZZP3l9EtulZEjw.png" width="400"/>
 </details> 
