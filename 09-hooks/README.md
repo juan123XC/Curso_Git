@@ -15,3 +15,16 @@ Tipos:
 <img src="https://miro.medium.com/v2/resize:fit:900/0*XACPPB4jjM7dqUu4.png" width="400"/>
 
 </details>
+
+<details>
+  <summary><strong>💻 Hooks del lado del cliente</strong></summary>
+
+- `pre-commit`: ejecuta verificaciones previas al commit (ideal para linters o restricciones).
+- `prepare-commit-msg`: modifica o agrega contenido al mensaje del commit.
+- `commit-msg`: valida que el mensaje del commit cumpla reglas.
+- `post-commit`: útil para notificar eventos (por ejemplo, vía Slack).
+- `pre-push`: ejecuta pruebas antes de hacer push.
+- `post-checkout` y `post-merge`: acciones como limpieza de archivos o ramas al cambiar de contexto.
+
+✅ Solo necesitas crear scripts con permisos de ejecución en `.git/hooks/`.
+</details>
