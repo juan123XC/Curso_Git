@@ -1,4 +1,4 @@
-# 🧰 Hooks, Alias y Trucos de Git
+# 🧰9 Hooks, Alias y Trucos de Git
 
 <details>
   <summary><strong>🔗 ¿Qué es un Hook?</strong></summary>
@@ -83,3 +83,76 @@ git st
 ¡Mucho más rápido!
 
 </details>
+
+<details>
+ <summary><strong># 🧠 Trucos avanzados en Git</strong></summary>
+
+##  Gestión temporal de cambios
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `git stash`                            | Guarda los cambios actuales sin confirmarlos.                              |
+| `git stash -u`                         | También guarda archivos no rastreados.                                     |
+| `git stash pop`                        | Recupera y aplica los últimos cambios guardados con `stash`.               |
+
+---
+
+##  Trabajar con commits específicos
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `git cherry-pick <SHA>`               | Aplica un commit específico de otra rama a la actual.                      |
+| `git commit --amend -m "mensaje"`     | Modifica el último commit (mensaje o contenido).                           |
+| `git revert <SHA>`                    | Revierte los cambios de un commit creando un nuevo commit inverso.         |
+
+---
+
+##  Diagnóstico de errores
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `git bisect`                           | Inicia una búsqueda binaria para encontrar el commit que causó un bug.     |
+| `git bisect start`                     | Comienza el proceso de búsqueda.                                           |
+| `git bisect bad`                       | Marca el estado actual como defectuoso.                                    |
+| `git bisect good`                      | Marca un estado anterior como funcional.                                   |
+| `git bisect reset`                    | Finaliza el proceso de búsqueda.                                           |
+
+---
+
+##  Recuperación de archivos y ramas
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `git checkout <SHA> -- archivo.txt`   | Restaura un archivo desde un commit anterior.                              |
+| `git restore --source=<SHA> archivo`  | (Git moderno) Alternativa a `checkout` para restaurar archivos.            |
+| `git reflog`                           | Muestra el historial de movimientos de HEAD, incluso los descartados.      |
+| `git reset --hard <SHA>`              | Restaura el repositorio completamente a un estado anterior (⚠️ destructivo).|
+
+---
+
+##  Trucos y utilidades adicionales
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `git config --global alias.st status` | Crea un alias para abreviar comandos (en este caso, `git st`).             |
+| `git shortlog -sn`                    | Muestra una tabla de contribuciones por autor.                             |
+| `git diff --staged`                   | Muestra diferencias de archivos que están en staging.                      |
+| `git log --oneline --graph --all`    | Visualiza el historial como un árbol compacto.                             |
+| `git blame archivo.txt`              | Muestra línea por línea quién hizo cada cambio.                            |
+| `git clean -fd`                       | Elimina archivos no rastreados y carpetas (⚠️ irreversible).               |
+| `git show <SHA>`                     | Muestra los detalles de un commit específico.                              |
+
+---
+
+##  Recomendaciones para usar estos comandos
+
+- 🔒 Haz respaldos antes de usar comandos destructivos como `reset --hard` o `clean`.
+- 🧪 Usa `stash` para no perder cambios en pruebas rápidas.
+- 🕵️‍♀️ Usa `bisect` cuando un bug aparece misteriosamente después de varios commits.
+- 👨‍💻 Configura **alias** para los comandos que más repites.
+</details>
+
+
+
+
+<img src="https://external-preview.redd.it/hgFzqyyYzVEnzpImswHxWKjdpn5l4aBQbOIgfnGiBD4.jpg?width=640&crop=smart&auto=webp&s=9f82a68f3668daf1f77fdef40e8d3e8e3f04bdd6" width="400"/>
