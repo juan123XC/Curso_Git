@@ -38,6 +38,8 @@ Usados en plataformas como GitHub o GitLab para automatizar validaciones:
 - `update`: controla qué actualizaciones se permiten.
 - `post-receive`: puede enviar correos, actualizar interfaces o sincronizar ramas.
 
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/652f71f725c60_git_hooks_01.jpg?d=2000x2000" width="400"/>
+
 💡 Muy útiles para controlar calidad, seguridad o automatización de despliegues.
 </details>
 
@@ -59,5 +61,25 @@ if git diff --cached --quiet; then
   echo "No hay cambios para guardar"
   exit 1
 fi
+```
+
+</details>
+
+<details>
+ <summary><strong>⚡ Alias personalizados en Git</strong></summary>
+Un alias te permite definir un comando corto para usar en vez de uno largo.
+
+Ejemplo de configuración:
+
+``` bash
+git config --global alias.co checkout
+git config --global alias.st status
+```
+Ahora puedes escribir:
+```bash
+git co main
+git st
+```
+¡Mucho más rápido!
 
 </details>
